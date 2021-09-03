@@ -1,0 +1,30 @@
+
+import java.util.Scanner; // import the Scanner class 
+
+class Main 
+{
+  public static void main(String[] args) 
+  {
+    Scanner myObj = new Scanner(System.in);
+    double d1 , d2;
+    
+    // Enter username and press Enter
+    System.out.println("Enter 2 doubles: "); 
+    d1 = myObj.nextDouble(); 
+    d2 = myObj.nextDouble();
+       
+    System.out.println("Your doubles were: " + d2 + d1);       
+        Scanner myScan = new Scanner(System.in);
+    String name;
+    String age;
+    
+    // Enter username and press Enter
+    System.out.println("Enter your name "); 
+    name = myScan.nextLine(); 
+
+       
+    System.out.println("Hi " + name + ". How old are you?");  
+     age = myScan.nextLine(); 
+   System.out.println(name + ", in " + (100 - age) + "years you will be 100.");
+  }
+}
